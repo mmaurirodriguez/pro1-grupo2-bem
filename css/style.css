@@ -1,8 +1,9 @@
 body{
-    background-color: beige;
+    background-image: url(../img/image\ \(1\).png);
 }
 .img-logo{
     border-radius: 50%;
     width: 200px;
     height: 200px;
 }
+
