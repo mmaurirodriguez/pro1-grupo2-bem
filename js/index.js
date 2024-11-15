@@ -1,8 +1,4 @@
-fetch('https://dummyjson.com/recipes/meal-type/snack')
-.then(res => res.json())
-.then(console.log);
-
-const URL =  "https://dummyjson.com/recipes/meal-type/snack";
+const URL =  "https://dummyjson.com/recipes?limit=10&skip=10&select=name,image";
 let listado = document.querySelector(".recetas");
 
 fetch(URL)
