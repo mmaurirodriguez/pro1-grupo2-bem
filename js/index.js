@@ -11,7 +11,7 @@ fetch(URL)
 })
 .then(function(data) {
     console.log(data);
-    const recetas = data.recipes;
+    
 })
 .catch(function(err) {
     return console.log(err);
