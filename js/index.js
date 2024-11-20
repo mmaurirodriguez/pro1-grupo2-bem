@@ -17,15 +17,14 @@ fetch(URL)
     for (let i = 0; i < dato.length; i++) {
         contenido += `<article>
                             <img src="${dato[i].image}" alt="">
-                            <p>Nombre de la receta: ${dato[i].name}" </p>
+                            <p>Nombre de la receta: ${dato[i].name}</p>
                             <p>Nivel de dificultad: ${dato[i].difficulty}</p>
                             <p>Detalle de la receta: <a href="./receta.html?idReceta=${dato[i].id}">${dato[i].name}</a></p>
-
                       </article>`;
 
     }
     listaRecetas.innerHTML = contenido;
-    
+    //boton cargar mas//
 })
 .catch(function(err) {
     return console.log(err);
