@@ -7,19 +7,24 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="cuerpo">
-    <div class="Form">
-        <label for="email">Email:</label>
-        <input type="email" id="email" required name="email" value="ingresa tu nombre">
-        <span class="error" id="errorcontra">Obligatorio</span>
-    </div>
-    <div class="Form">
-        <label for="password">Password:</label>
-        <input type="password" id="password" required name="password">
-        <span class="error" id="errorcontra">Obligatorio</span>
-    </div>
-    <div>
-        <a href="registro.html">No tengo cuenta</a> 
-    </div>
+    <div class="formContainer">
+        <form id="loginForm">
+            <div class="formGrupo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required name="email" value="ingresa tu nombre">
+                <span class="error" id="errorcontra">Obligatorio</span>
+            </div>
+            <div class="Form">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required name="password">
+                <span class="error" id="errorcontra">Obligatorio</span>
+            </div>
+            <div>
+                <a href="registro.html">No tengo cuenta</a> 
+            </div>
+            <button type="submit">Iniciar Sesión</button>
+        </div>
+    </form>
     <footer>
         <nav>
             <ul class="listNavbar">
