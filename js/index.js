@@ -1,34 +1,39 @@
 let buscador = document.querySelector(".buscador");
 let formulario = document.querySelector("form");
 let listaRecetas = document.querySelector(".recetas-section");
+let cargarMasBtn = document.querySelector(".cargar-mas")
+let skip = 0;
 
 //APIS E INFO//
-const URL =  "https://dummyjson.com/recipes?limit=10&skip=0";
-
-fetch(URL)
-.then(function(data) {
-    return data.json();
-})
-.then(function(results) {
-    console.log(results);
-    let dato = results.recipes;
-    let contenido = "";
-
-    for (let i = 0; i < dato.length; i++) {
-        contenido += `<article>
-                            <img src="${dato[i].image}" alt="">
-                            <p>Nombre de la receta: ${dato[i].name}</p>
-                            <p>Nivel de dificultad: ${dato[i].difficulty}</p>
-                            <p>Detalle de la receta: <a href="./receta.html?idReceta=${dato[i].id}">${dato[i].name}</a></p>
-                      </article>`;
-
+const URL =  "https://dummyjson.com/recipes?limit=10&skip="+ skip;
+function cargarMasrecetas(url) {
+    fetch(url)
+    .then(function(data) {
+        return data.json();
+    })
+    .then(function(results) {
+        console.log(results);
+        let dato = results.recipes;
+        let contenido = "";
+        for (let i = 0; i < dato.length; i++) {
+            contenido += `<article>
+                                <img src="${dato[i].image}" alt="">
+                                <p>Nombre de la receta: ${dato[i].name}</p>
+                                <p>Nivel de dificultad: ${dato[i].difficulty}</p>
+                                <p>Detalle de la receta: <a href="./receta.html?idReceta=${dato[i].id}">${dato[i].name}</a></p>
+                            </article>`;
     }
-    listaRecetas.innerHTML = contenido;
-    //boton cargar mas//
+    listaRecetas.innerHTML += contenido; 
 })
 .catch(function(err) {
     return console.log(err);
-    ;
+});
+}
+cargarMasrecetas(URL);
+cargarMasBtn.addEventListener("click", function() {
+    skip += 10;
+    let url = "https://dummyjson.com/recipes?limit=10&skip=" + skip;
+    cargarMasrecetas(url); // Cargar recetas adicionales
 });
 
 //BUSCADOR FORMULARIO//
