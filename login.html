@@ -3,22 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="cuerpo">
-    
-    <div>
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" required id="email" value="email" class="email"> EMAIL
+    <div class="Form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required name="email" value="ingresa tu nombre">
+        <span class="error" id="errorcontra">Obligatorio</span>
     </div>
-    <div>
-        <label for="name">NOMBRE</label>
-        <input type="password" name="password" required id="password" value="password" class="contraseña"> CONTRASEÑA
+    <div class="Form">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required name="password">
+        <span class="error" id="errorcontra">Obligatorio</span>
     </div>
     <div>
         <a href="registro.html">No tengo cuenta</a> 
     </div>
+    <footer>
+        <nav>
+            <ul class="listNavbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul> 
+        </nav>
+        <section class="nombres">
+            <p>Mariana Mauri</p>
+            <p>Brisa Pereyra</p>
+            <p>Emma Magnin</p>
+        </section>
+    </footer>
     <script src="./js/login.js"></script>
     <!--remplazar required con js y alerts-->
 </body>

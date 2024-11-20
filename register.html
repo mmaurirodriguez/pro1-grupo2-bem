@@ -1,2 +1,73 @@
 <!--Igual al login pero con el href a login en lugar de registro y agregar checkbox-->
 <!--NO OLVIDARSE DEL SCRIPT-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <img class="img-logo" src="./img/image_converted_v2.png" alt="logo">
+        <nav>
+            <ul class="listNavbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categorías</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Registro</a></li>
+            </ul>
+        </nav>
+        <section>
+            <form action="/index.html" method="get">
+                <input class="buscador" name="buscador" type="text">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        </header>
+    <main>
+        <div class="container">
+            <form id="FormReg" action="" method="get">
+                <h2>Registro</h2>
+                <section class="Forms">
+                    <div class="Form">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required name="email" value="ingresa tu nombre">
+                        <span class="error" id="errorcontra">Obligatorio</span>
+                    </div>
+                    <div class="Form">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" required name="password">
+                        <span class="error" id="errorcontra">Obligatorio</span>
+                    </div>
+                    <div class="Form">
+                        <input type="checkbox" id="terminos" required name="terminos y condiciones" value="terminos y condiciones">
+                        <label for="Terminos y Condiciones">Acepto terminos y condiciones</label>
+                    </div>
+                    <div>
+                        <button type="submit" class="registrame">Registrarse</button>
+                        <a href="login.html">Ya tengo cuenta</a>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <ul class="listNavbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categorias.html">Categorías</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul> 
+        </nav>
+        <section class="nombres">
+            <p>Mariana Mauri</p>
+            <p>Brisa Pereyra</p>
+            <p>Emma Magnin</p>
+        </section>
+    </footer>
+<script src="./js/register.js"></script>
+</body>
+</html>
