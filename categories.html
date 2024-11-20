@@ -4,32 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header>
-        <img class="img-logo" src="./img/image_converted_v2.png" alt="logo">
+        <div class="logoNavContainer">
+            <img class="img-logo" src="./img/image_converted_v2.png" alt="logo">
+            <nav>
+                <ul class="listNavbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html">Categorías</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html">Registro</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <form action="/index.html" method="get">
+                <input class="buscador" name="buscador" type="text" placeholder="Buscar recetas...">
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+    </header>
+
+    <footer>
         <nav>
             <ul class="listNavbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="categories.html">Categorías</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="register.html">Registro</a></li>
-            </ul>
-        </nav>
-        <section>
-            <form action="/index.html" method="get">
-                <input class="buscador" name="buscador" type="text">
-                <button type="submit">Buscar</button>
-            </form>
-        </section>
-    </header>
-    <footer>
-        <nav>
-            <ul class="listNavbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categorias.html">Categorías</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registro.html">Registro</a></li>
             </ul> 
         </nav>
         <section class="nombres">
@@ -38,6 +42,6 @@
             <p>Emma Magnin</p>
         </section>
     </footer>
-    
+    <script src="./js/categories.js"></script>
 </body>
 </html>
