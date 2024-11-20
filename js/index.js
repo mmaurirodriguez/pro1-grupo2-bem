@@ -29,6 +29,7 @@ function cargarMasrecetas(url) {
     return console.log(err);
 });
 }
+//boton cargar mas//
 cargarMasrecetas(URL);
 cargarMasBtn.addEventListener("click", function() {
     skip += 10;
