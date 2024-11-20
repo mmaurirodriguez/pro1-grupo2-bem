@@ -16,14 +16,13 @@ function cargarMasrecetas(url) {
         let dato = results.recipes;
         let contenido = "";
         for (let i = 0; i < dato.length; i++) {
-            let categorias = dato[i].tags.join(", ");
             contenido += `<article>
                                 <p class="tituloReceta">Nombre de la receta: ${dato[i].name}</p>
                                 <p class="ingrReceta">Ingredientes: ${dato[i].ingredients}</p>
                                 <p class="instrReceta">Instrucciones de preparación: ${dato[i].instructions}</p>
                                 <p class="tiempCoccRecetas">Tiempo de cocción: ${dato[i].cookTimeMinutes}</p>
                                 <img class="imgRecetas" src="${dato[i].image}" alt="">
-                                <p class="categRecetas">Categorias: ${categorias}</p>
+                                <p class="categRecetas">Categorias:<a href="./categories.html?idReceta=${dato[i].tags}">${dato[i].tags}</a></p>
                             </article>`;
     }
     listaRecetas.innerHTML += contenido; 
