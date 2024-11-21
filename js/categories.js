@@ -19,7 +19,7 @@ function cargarMasrecetas(url) {
         let tagsParaMostrar = dato.slice(skip, skip + 10);
 
         for (let i = 0; i < tagsParaMostrar.length; i++) {
-            contenido += `<li><a href="./category.html">${tagsParaMostrar[i]}</a></li>`;
+            contenido += `<li class=listadoCategories><a href="./category.html">${tagsParaMostrar[i]}</a></li>`;
         }
         listaRecetas.innerHTML += contenido;  // Esto va después del bucle
 })
