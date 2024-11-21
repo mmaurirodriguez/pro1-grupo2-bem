@@ -28,3 +28,26 @@ const URL = "https://dummyjson.com/recipes/tags?limit=10&skip=" + skip;
                 console.log(err);
             }); 
     }
+//boton cargar mas//
+cargarMasrecetas(URL);
+cargarMasBtn.addEventListener("click", function() {
+    skip += 10;
+    const url = "https://dummyjson.com/recipes/tags?limit=10&skip=" + skip;
+    cargarMasrecetas(url);
+});
+
+
+//BUSCADOR FORMULARIO//
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let valorNombre = buscador.value;
+
+
+    if (!valorNombre) {
+        alert("Debes completar el campo nombre");
+    } else if (valorNombre.length < 3) {
+        alert("El nombre debe tener al menos 3 caracteres");
+    } else {
+        formulario.submit();
+    }
+});
