@@ -6,94 +6,216 @@
 
 body{
 background-image: url(../img/image\ \(1\).png);
-font-family: sans-serif;
+font-family: 'Arial',sans-serif;
+background-size: cover;
+background-position: center;
+color: #333;
 }
-.contenedor {
-    height: 80px;
+
+.logo {
     display: flex;
     justify-content: center;
-    margin: 0px 0px 45px;
-}
-.logo {
-display: flex;
-justify-content: center;
-padding: 30px 0px;
-}
-.img-logo {
-align-items: flex-start;
-border-radius: 50%;
-width: 86px;
-display: flex;
-justify-content: space-around;
-flex-wrap: nowrap;
-flex-direction: column;
-margin: 0px 70px;
-}
-nav {
-margin: auto;
-width: 100%;
-}
+    padding: 30px 0px;
+    }
+    img.img-logo {
+        padding: 12px;
+    }
+    .img-logo {
+        align-items: flex-start;
+        border-radius: 50%;
+        width: 135px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+.links {
+        text-align: right;
+        padding-top: 10px;
+        margin-right: 4px;
+    }
 
-.listNavbar1 {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px;
-    padding-left: 302px;
-    
-}
-
-
+.links a {
+        text-decoration: none;
+        color: #444;
+        font-weight: bold;
+        margin-left: 20px;
+    }
 
 a {color: black;
     text-decoration: none;}
 
 ol, ul {
     list-style-type: none;
-    padding: 0px;
-    margin: 0px;
-    display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.contenedorIzq {
-margin-bottom: 52px;
-margin-top: 0px;
+form.FormBuscar {
+    width: 95%;
+    padding-top: 25px;
 }
-.contenedorC {
-height: 80px;
-width: 45%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-margin: 30px;
+input.buscador {
+    padding: 5px;
+    width: 435px;
+    margin: -1px;
+}
+.formBuscar input{
+        width: 90%;
+        height: 40px;
+        border: 1px solid#ccc;
+        border-radius: 1px solid transparent;
+       padding: 5px;
+    }
+    button {
+        padding: 4px;
+    }
+.formBuscar button{
+        width: 10%;
+        height: 40px;
+        background-color: rgb(255 255 255);
+        border-left: 1px solid rgba(112, 112, 112, 0.962);
+        border-top-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        color: white;
+        border-radius: 5px;
+    }
+    form.FormBuscar {
+        width: 95%;
+        padding-top: 25px;
+    }
+    input.buscador {
+        padding: 4px;
+        width: 435px;
+        margin: -1px;
+    }
+    main {
+        padding-top: 20px;
+    }
+    button {
+        padding: 4px;
+    }
+    input.buscador {
+        padding: 5px;
+        width: 435px;
+        margin: -1px;
+    }
+    .contenedor {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+    }
+
+    .contenedorIz, .contenedorC, .contenedorD {
+        height: 100px;
+        display: flex
+    ;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+        align-content: center;
+    }
+    .contenedorIz {
+       
+        width: 30%;
+        
+    }
+    
+    .contenedorC {
+       
+        width: 51%;
+        
+    }
+    
+    .contenedorD {
+       
+        width: 20%;
+        
+    }
+    .items1 {
+        width: 100%;
+        display: flex
+    ;
+        justify-content: space-evenly;
+        padding: 15px 0px;
+        margin: 18px;
+    }
+.item {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.contenedorD {
-height: 80px;
-width: 25%;
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
+img.imgPlato {
+    width: 70%;
+    border-radius: 30px;
 }
-.FormBuscar {
-width: 100%;
-display: flex;
-justify-content: center;
+section.recetas-section {
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: center;
+   
 }
-.FormBuscar input {
-width: 90%;
-height: 30px;
-border: 1px solid transparent;
+p {
+    text-decoration: none;
+    padding: 10px;
 }
-.FormBuscar button {
-width: 10%;
-height: 34px;
-background-color: rgb(255 255 255);
-border-left: 1px solid rgba(112, 112, 112, 0.962);
-border-top-color: transparent;
-border-bottom-color: transparent;
-border-right-color: transparent;
+button.cargar-mas {
+    
+    padding: 12px;
+  
+    background-color: darkgrey;
+    text-decoration-color: white;
+    border-block-color: transparent;
+    border-block-end-style: transparent;
+   
 }
+article.BEM {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    margin: 0px 250px;
+    align-content: center;
+    align-items: center;
+}
+article {
+    padding-left: 136px;
+    padding-top: 10px;
+    flex-direction: row;
+}
+
+h1 {
+    padding: 15px;
+    text-align: center;
+    text-size-adjust: auto;
+    font-size: 29px;
+    text-decoration-color: white;
+    display: flex
+;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    align-content: center;
+}
+
+p {
+    text-decoration: none;
+    padding: 10px;
+}
+button.cargar-mas {
+
+    padding: 12px;
+    background-color: darkgrey;
+    text-decoration-color: white;
+    border-block-color: transparent;
+    border-block-end-style: transparent; }
