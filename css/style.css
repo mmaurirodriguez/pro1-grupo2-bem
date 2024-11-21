@@ -336,3 +336,7 @@ article.BEM {
     h1.loginh1 {
         background-color: transparent;
     }
+/*BOTON EN CATEGORIES*/
+.contenedorCargarMas{
+    text-align: center;
+}
