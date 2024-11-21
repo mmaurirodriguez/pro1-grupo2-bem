@@ -17,11 +17,11 @@ fetch(url)
 })
 .then(function(results) {
     console.log(results);
-    nameReceta.innerText = `Nombre: ${results.name}`
-    instReceta.innerText = `Instrucciones: ${results.instructions}`
+    nameReceta.innerText = `Receta: ${results.name}`
+    instReceta.innerText = `Instrucciones de preparación: ${results.instructions}`
     img.src= results.image;
     tiempCoccReceta.innerText = `Tiempo de cocción: ${results.cookTimeMinutes}`
-    categoriaReceta.innerText = `Categoria: ${results.tags}`
+    categoriaReceta.innerHTML = `Categorias: <a href="./categories.html">${results.tags}</a>`
 
 })
 .catch(function(err) {
