@@ -169,6 +169,8 @@ p {
     padding: 10px;
 }
 button.cargar-mas {
+    align-items: center;
+    justify-content: center;
     
     padding: 12px;
   
@@ -176,7 +178,7 @@ button.cargar-mas {
     text-decoration-color: white;
     border-block-color: transparent;
     border-block-end-style: transparent;
-   
+    
 }
 article.BEM {
     display: flex;
