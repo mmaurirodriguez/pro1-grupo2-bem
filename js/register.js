@@ -1,4 +1,5 @@
-document.getElementById('FormReg').addEventListener('submit', function(event)){
+document.getElementById('FormReg').addEventListener ('submit', function(event) {
+{
     event.preventDefault(); 
     const password = document.getElementById('password').value;
     const email = document.getElementById('email').value;
@@ -7,6 +8,8 @@ document.getElementById('FormReg').addEventListener('submit', function(event)){
     emailError.textContent = '';
     passwordError.textContent = '';
     let valid = true; 
+} 
+document.getElementById('FormReg').addEventListener('submit', function(event){
     if (!email){
         emailError.textContent = 'Complete el campo porfavor';
         valid = false
@@ -15,5 +18,8 @@ document.getElementById('FormReg').addEventListener('submit', function(event)){
         passwordError.textContent = 'Complete el campo porfavor';
         valid = false
     }
-}
+    if (valid) {
+        window.location.href = 'login.html'
+    }
+}; 
 
