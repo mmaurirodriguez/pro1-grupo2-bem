@@ -5,43 +5,40 @@ let listaRecetas = document.querySelector(".recetas-section");
 let cargarMasBtn = document.querySelector(".cargar-mas")
 let skip = 0;
 
-
 //APIS E INFO//
 const URL = "https://dummyjson.com/recipes/tags?limit=10&skip=" + skip;
-    function cargarMasrecetas(url) {
-        fetch(url)
-            .then(function(data) {
-                return data.json();
-            })
-            .then(function(results) {
-                console.log(results);
-                let dato = results;
-                let contenido = "";
-                let tagsParaMostrar = dato.slice(skip, skip + 10);
-    
-                for (let i = 0; i < tagsParaMostrar.length; i++) {
-                    contenido += `<li><a href="./category.html">${tagsParaMostrar[i]}</a></li>`;
-                }
-                listaRecetas.innerHTML += contenido;
-            })
-            .catch(function(err) {
-                console.log(err);
-            }); 
-    }
+function cargarMasrecetas(url) {
+    fetch(url)
+    .then(function(data) {
+        return data.json();
+    })
+    .then(function(results) {
+        console.log(results);
+        let dato = results;
+        let contenido = "";
+        let tagsParaMostrar = dato.slice(skip, skip + 10);
+
+        for (let i = 0; i < tagsParaMostrar.length; i++) {
+            contenido += `<li><a href="./category.html">${tagsParaMostrar[i]}</a></li>`;
+        }
+        listaRecetas.innerHTML += contenido;  // Esto va después del bucle
+})
+.catch(function(err) {
+    console.log(err);
+});
+}
 //boton cargar mas//
 cargarMasrecetas(URL);
 cargarMasBtn.addEventListener("click", function() {
     skip += 10;
     const url = "https://dummyjson.com/recipes/tags?limit=10&skip=" + skip;
-    cargarMasrecetas(url);
+    cargarMasrecetas(url); // 
 });
-
 
 //BUSCADOR FORMULARIO//
 formulario.addEventListener("submit", function(e) {
     e.preventDefault();
     let valorNombre = buscador.value;
-
 
     if (!valorNombre) {
         alert("Debes completar el campo nombre");
@@ -51,3 +48,4 @@ formulario.addEventListener("submit", function(e) {
         formulario.submit();
     }
 });
+
