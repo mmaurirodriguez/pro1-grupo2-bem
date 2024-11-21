@@ -235,7 +235,29 @@ article.BEM {
         border-radius: 30px;
         justify-content: center;
     }
-    
+.FormReg{
+    background-color: #44444429;
+        display: flex;
+        border-radius: 10px;
+        width: 550px;
+        margin: auto;
+        flex-direction: column;
+        padding: 60px;
+}
+.tituloRegister{
+    padding: 15px;
+    text-align: center;
+    text-size-adjust: auto;
+    font-size: 29px;
+    text-decoration-color: white;
+    display: flex
+;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
 .loginForm {
         background-color: #44444429;
         display: flex;
