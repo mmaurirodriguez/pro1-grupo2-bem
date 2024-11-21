@@ -6,40 +6,59 @@
     <title>Login</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="cuerpo">
-    <div class="formContainer">
+
+<body>
+    <header class="contenedor">
+        <article class="contenedorD">
+            <img class="img-logo" src="./img/image_converted_v2.png" alt="logo">
+        </article>
+        <article class="contenedorC">
+            <form class="FormBuscar"  action="/index.html" method="get">
+                <input class="buscador" name="" placeholder="Buscar recetas" type="text">
+                <button type="submit">Buscar</button>
+            </form>
+        </article> 
+    <article class="contenedorIz">
+        <nav>
+            <ul class="items1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categorías</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Registro</a></li>
+            </ul>
+        </nav>
+       </article>
+        </section>
+    </header>
         <form id="loginForm">
-            <div class="formGrupo">
+            <div class="Form">
                 <label for="email">Email:</label>
-                <input type="email" id="email" required name="email" value="ingresa tu nombre">
-                <span class="error" id="errorcontra">Obligatorio</span>
+                <input type="email" id="email" required name="email" value="">
+                <span class="obl" id="errorcontra">Obligatorio</span>
             </div>
             <div class="Form">
                 <label for="password">Password:</label>
                 <input type="password" id="password" required name="password">
-                <span class="error" id="errorcontra">Obligatorio</span>
+                <span class="obl" id="errorcontra">Obligatorio</span>
             </div>
-            <div>
+            <div class="no_cuenta">
                 <a href="registro.html">No tengo cuenta</a> 
-            </div>
-            <button type="submit">Iniciar Sesión</button>
-        </div>
-    </form>
-    <footer>
-        <nav>
-            <ul class="listNavbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categorias.html">Categorías</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="registro.html">Registro</a></li>
-            </ul> 
-        </nav>
-        <section class="nombres">
-            <p>Mariana Mauri</p>
-            <p>Brisa Pereyra</p>
-            <p>Emma Magnin</p>
-        </section>
-    </footer>
+            </div >
+            <section class="btninicio">
+            
+            <button class="derivar" type="submit">Iniciar Sesión</button>
+
+            </section>
+        </form>
+        <footer>
+            <section class="nombres">
+                <article class="BEM">
+                <p>Mariana Mauri</p>
+                <p>Brisa Pereyra</p>
+                <p>Emma Magnin</p>
+            </article>
+            </section>
+        </footer>
     <script src="./js/login.js"></script>
     <!--remplazar required con js y alerts-->
 </body>
