@@ -20,7 +20,8 @@ function cargarMasrecetas(url) {
                                 <img class="imgPlato" src="${dato[i].image}" alt="">
                                 <p class="nombrePlato">Nombre de la receta: ${dato[i].name}</p>
                                 <p class="dificultadPlato">Nivel de dificultad: ${dato[i].difficulty}</p>
-                                <p class="detallePlato">Detalle de la receta: <a href="./receta.html?idReceta=${dato[i].id}">${dato[i].name}</a></p>
+                                <p class="detallePlato"><a href="./receta.html?idReceta=${dato[i].id}">Link para ir al detalle</a>
+</p>
                             </article>`;
     }
     listaRecetas.innerHTML += contenido; 
