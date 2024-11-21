@@ -6,5 +6,14 @@ document.getElementById('FormReg').addEventListener('submit', function(event)){
     const emailError = document.getElementById('emailError');
     emailError.textContent = '';
     passwordError.textContent = '';
-
+    let valid = true; 
+    if (!email){
+        emailError.textContent = 'Complete el campo porfavor';
+        valid = false
+    } 
+    if (!password) {
+        passwordError.textContent = 'Complete el campo porfavor';
+        valid = false
+    }
 }
+
