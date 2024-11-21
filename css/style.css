@@ -120,15 +120,12 @@ input.buscador {
         align-content: center;
     }
     .contenedorIz {
-       
-        width: 30%;
-        
+        width: 30%;   
     }
     
     .contenedorC {
        
         width: 51%;
-        
     }
     
     .contenedorD {
@@ -158,7 +155,7 @@ img.imgPlato {
 section.recetas-section {
     display: flex
 ;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: stretch;
     justify-content: space-evenly;
