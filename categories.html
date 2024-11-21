@@ -8,27 +8,30 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <div class="logoNavContainer">
+    <header class="contenedor">
+        <article class="contenedorD">
             <img class="img-logo" src="./img/image_converted_v2.png" alt="logo">
-            <nav>
-                <ul class="listNavbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="categories.html">Categorías</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Registro</a></li>
-                </ul>
-            </nav>
-        </div>
-        <section>
-            <form action="/index.html" method="get">
-                <input class="buscador" name="buscador" type="text" placeholder="Buscar recetas...">
+        </article>
+        <article class="contenedorC">
+            <form class="FormBuscar"  action="/index.html" method="get">
+                <input class="buscador" name="" placeholder="Buscar recetas" type="text">
                 <button type="submit">Buscar</button>
             </form>
+        </article> 
+    <article class="contenedorIz">
+        <nav>
+            <ul class="items1">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categorías</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Registro</a></li>
+            </ul>
+        </nav> 
+    </article>
         </section>
-    </header>
+</header>
     <main>
-        <section>
+        <section class="sectionCategories">
                 <h1>Categorias disponibles</h1>
                     <section class="recetas-section">
                         <ol>
@@ -38,21 +41,16 @@
                     <button class="cargar-mas">Cargas más</button>
         </section>
    </main>
+
     <footer>
-        <nav>
-            <ul class="listNavbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="categories.html">Categorías</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="register.html">Registro</a></li>
-            </ul> 
-        </nav>
         <section class="nombres">
+            <article class="BEM">
             <p>Mariana Mauri</p>
             <p>Brisa Pereyra</p>
             <p>Emma Magnin</p>
+        </article>
         </section>
     </footer>
-    <script src="./js/categories.js"></script>
+<script src="./js/categories.js"></script>
 </body>
 </html>
