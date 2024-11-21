@@ -236,7 +236,7 @@ article.BEM {
         justify-content: center;
     }
     
-    form#loginForm {
+.loginForm {
         background-color: #44444429;
         display: flex;
         border-radius: 10px;
