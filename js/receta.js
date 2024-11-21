@@ -1,55 +1,29 @@
-let buscador = document.querySelector(".buscador");
-let formulario = document.querySelector("form");
-let listaRecetas = document.querySelector(".recetas-section");
-let cargarMasBtn = document.querySelector(".cargar-mas")
-let skip = 0;
+let qs = location.search;
+let qsObj = new URLSearchParams(qs);
+let idReceta = qsObj.get("idReceta");
 
-const URL = "https://dummyjson.com/recipes?limit=10&skip="+ skip;
+/* recuperar elementos del DOM */
+let nameReceta = document.querySelector(".nameReceta");
+let instReceta = document.querySelector(".instReceta");
+let img = document.querySelector(".img");
+let tiempCoccReceta = document.querySelector(".tiempCoccReceta");
+let categoriaReceta = document.querySelector(".categoriaReceta");
 
-function cargarMasrecetas(url) {
-    fetch(url)
-    .then(function(data) {
-        return data.json();
-    })
-    .then(function(results) {
-        console.log(results);
-        let dato = results.recipes;
-        let contenido = "";
-        for (let i = 0; i < dato.length; i++) {
-            contenido += `<article>
-                                <p class="tituloReceta">Nombre de la receta: ${dato[i].name}</p>
-                                <p class="ingrReceta">Ingredientes: ${dato[i].ingredients}</p>
-                                <p class="instrReceta">Instrucciones de preparación: ${dato[i].instructions}</p>
-                                <p class="tiempCoccRecetas">Tiempo de cocción: ${dato[i].cookTimeMinutes}</p>
-                                <img class="imgRecetas" src="${dato[i].image}" alt="">
-                                <p class="categRecetas">Categorias:<a href="./categories.html?idReceta=${dato[i].tags}">${dato[i].tags}</a></p>
-                            </article>`;
-    }
-    listaRecetas.innerHTML += contenido; 
+let url = `https://dummyjson.com/recipes/${idReceta}`;
+
+fetch(url)
+.then(function(data) {
+    return data.json();
+})
+.then(function(results) {
+    console.log(results);
+    nameReceta.innerText = `Nombre: ${results.name}`
+    instReceta.innerText = `Instrucciones: ${results.instructions}`
+    img.src= results.image;
+    tiempCoccReceta.innerText = `Tiempo de cocción: ${results.cookTimeMinutes}`
+    categoriaReceta.innerText = `Categoria: ${results.tags}`
+
 })
 .catch(function(err) {
     return console.log(err);
 });
-}
-//boton cargar mas//
-cargarMasrecetas(URL);
-cargarMasBtn.addEventListener("click", function() {
-    skip += 10;
-    let url = "https://dummyjson.com/recipes?limit=10&skip=" + skip;
-    cargarMasrecetas(url); // Cargar recetas adicionales
-});
-
-//BUSCADOR FORMULARIO//
-formulario.addEventListener("submit", function(e) {
-    e.preventDefault();
-    let valorNombre = buscador.value;
-
-    if (!valorNombre) {
-        alert("Debes completar el campo nombre");
-    } else if (valorNombre.length < 3) {
-        alert("El nombre debe tener al menos 3 caracteres");
-    } else {
-        formulario.submit();
-    }
-});
-
