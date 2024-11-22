@@ -1,7 +1,7 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idReceta = qsObj.get("idReceta");
-let url = `https://dummyjson.com/recipes/tags/${idReceta}`;
+let url = `https://dummyjson.com/recipes/tag/${idReceta}`;
 let articleCategoria = document.querySelector(".article-Category");
 
 fetch(url)
@@ -17,7 +17,7 @@ fetch(url)
         <img class ="imgPlato"src="${recetas[i].image}" alt="${recetas[i].name}">
         <h2 class="nombrePlato">${recetas[i].name}</h2>
         <p class="dificultadPlato">Nivel de dificultad: ${recetas[i].difficulty}</p>
-        <a class= "detalleReceta" href="./recetas.html?idReceta=${recetas[i].id}">Ver detalle</a>
+        <a class= "detalleReceta" href="./receta.html?idReceta=${recetas[i].id}">Ver detalle</a>
         </article>`;
         
 }
