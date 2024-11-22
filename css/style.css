@@ -120,15 +120,12 @@ input.buscador {
         align-content: center;
     }
     .contenedorIz {
-       
-        width: 30%;
-        
+        width: 30%;   
     }
     
     .contenedorC {
        
         width: 51%;
-        
     }
     
     .contenedorD {
@@ -158,19 +155,22 @@ img.imgPlato {
 section.recetas-section {
     display: flex
 ;
-
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-content: inline-block;
     justify-content: space-evenly;
     align-items: center;
-   
+    text-decoration: none;
+    list-style: none;
+    
 }
 p {
     text-decoration: none;
     padding: 10px;
 }
 button.cargar-mas {
+    align-items: center;
+    justify-content: center;
     
     padding: 12px;
   
@@ -178,7 +178,7 @@ button.cargar-mas {
     text-decoration-color: white;
     border-block-color: transparent;
     border-block-end-style: transparent;
-   
+    
 }
 article.BEM {
     display: flex;
@@ -234,8 +234,30 @@ article.BEM {
         border-radius: 30px;
         justify-content: center;
     }
-    
-    form#loginForm {
+.FormReg{
+    background-color: #44444429;
+        display: flex;
+        border-radius: 10px;
+        width: 550px;
+        margin: auto;
+        flex-direction: column;
+        padding: 60px;
+}
+.tituloRegister{
+    padding: 15px;
+    text-align: center;
+    text-size-adjust: auto;
+    font-size: 29px;
+    text-decoration-color: white;
+    display: flex
+;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+
+}
+.loginForm {
         background-color: #44444429;
         display: flex;
         border-radius: 10px;
@@ -276,11 +298,21 @@ article.BEM {
     .Form {
         margin: 20px 50px 5px 50px;
         padding: 10px;
+        align-items: center;
     }
     
     .no_cuenta {
         font-size: x-small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
+    input#email {
+        margin: 5px 4px;
+    }
+    input#password {  margin: 5px 4px;
+    }
+    
     
     button.derivar {
         background-color: #5757b2;
@@ -299,3 +331,10 @@ article.BEM {
         justify-content: center;
         gap: 10px;
     }
+    h1.loginh1 {
+        background-color: transparent;
+    }
+/*BOTON EN CATEGORIES*/
+.contenedorCargarMas{
+    text-align: center;
+}
