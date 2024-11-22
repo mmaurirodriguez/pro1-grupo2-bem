@@ -250,18 +250,15 @@ article.BEM {
         flex-direction: column;
         padding: 60px;
 }
-.tituloRegister{
-    padding: 15px;
-    text-align: center;
-    text-size-adjust: auto;
-    font-size: 29px;
-    text-decoration-color: white;
-    display: flex
-;
+
+section.EPform {
+    display: flex;
+    flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    align-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    background-color: grey;
+    padding-right: 110px;
 }
 .loginForm {
         background-color: #44444429;
@@ -273,7 +270,7 @@ article.BEM {
         padding: 60px;
     }
     label {
-        font-size: small;
+        font-size: medium;
         margin-bottom: 3px;
         font-weight: 300;
     }
@@ -298,14 +295,18 @@ article.BEM {
     }
     .no_cuenta {
         font-size: x-small;
-        display: flex;
+        display: flex ;
         justify-content: center;
         align-items: center;
+        margin: 14px;
     }
     input#email {
-        margin: 5px 4px;
+        margin: 5px 5px;
+        width: 156%;
     }
-    input#password {  margin: 5px 4px;
+    input#password {  
+        margin: 5px 4px;
+        width: 156%;
     }
     button.derivar {
         background-color: #5757B2;
@@ -314,18 +315,37 @@ article.BEM {
         padding: 12px;
         border-radius: 5px;
         align-self: center;
-        margin: 15px 0px 40px 0px;
         font-size: small;
     }
     section.btninicio {
-        flex-direction: row;
+        flex-direction: column;
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    h1.loginh1 {
-        background-color: transparent;
+    a.anocuenta {
+        font-weight: bolder;
+        font-size: small;
     }
+    p.detallePlato {
+        font-weight: bolder;
+        font-size: small;
+    }
+    h1.loginh1  {
+        background-color: #0a383b;
+        font-family: ui-rounded;
+        border-radius: 4px;
+    }
+.tituloRegister {
+    background-color: #0a383b;
+        font-family: ui-rounded;
+        border-radius: 4px;
+}
+label.checkbox {
+    font-size: small;
+    padding: 8px;
+    margin: 4px;
+}
 /*BOTON EN CATEGORIES*/
 .contenedorCargarMas{
     text-align: center;

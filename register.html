@@ -33,26 +33,30 @@
     </header>
     <main>
         <div class="registroForm">
-            <form class="FormReg" action="" method="get">
+            <form class="FormReg" action="register.html" method="get">
                 <h1 class="tituloRegister">Registro</h1>
                 <section class="Forms">
-                    <div class="Form">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" required name="email" value="">
-                       
-                    </div>
-                    <div class="Form">
-                        <label for="password">Password:</label>
-                        <input type="password" id="password" required name="password">
-                       
-                    </div>
+                    <section class="EPform">
+                        <div class="Form">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required name="email" value="">
+                            
+                        </div>
+                        <div class="Form">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" required name="password">
+                        
+                        </div>
+                    </section>
                     <div class="Form">
                         <input type="checkbox" id="terminos" required name="terminos y condiciones" value="terminos y condiciones">
-                        <label for="Terminos y Condiciones">Acepto terminos y condiciones</label>
+                        <label for="Terminos y Condiciones" class="checkbox">Acepto términos y condiciones</label>
                     </div>
                     <section class="btninicio">
+                        <div class="no_cuenta">
+                            <a href="login.html" class="anocuenta">Ya tengo cuenta</a>
+                            </div>
                         <button type="submit" class="derivar">Registrarse</button>
-                        <a href="login.html">Ya tengo cuenta</a>
                     </section>
                 </section>
             </form>
