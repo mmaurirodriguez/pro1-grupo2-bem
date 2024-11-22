@@ -1,9 +1,8 @@
 * {
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
-
 body{
 background-image: url(../img/R.jpg);
 font-family: 'Arial',sans-serif;
@@ -11,7 +10,6 @@ background-size: cover;
 background-position: center;
 color: #333;
 }
-
 .logo {
     display: flex;
     justify-content: center;
@@ -35,17 +33,14 @@ color: #333;
         padding-top: 10px;
         margin-right: 4px;
     }
-
 .links a {
         text-decoration: none;
         color: #444;
         font-weight: bold;
         margin-left: 20px;
     }
-
 a {color: black;
     text-decoration: none;}
-
 ol, ul {
     list-style-type: none;
     flex-direction: row;
@@ -108,7 +103,6 @@ input.buscador {
         align-items: center;
         margin: 30px;
     }
-
     .contenedorIz, .contenedorC, .contenedorD {
         height: 100px;
         display: flex
@@ -116,22 +110,16 @@ input.buscador {
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        
         align-content: center;
     }
     .contenedorIz {
-        width: 30%;   
+        width: 30%;
     }
-    
     .contenedorC {
-       
         width: 51%;
     }
-    
     .contenedorD {
-       
         width: 20%;
-        
     }
     .items1 {
         width: 100%;
@@ -142,12 +130,11 @@ input.buscador {
         margin: 18px;
     }
 .item {
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
 img.imgPlato {
     display: flex;
     width: 100%;
@@ -164,6 +151,7 @@ section.recetas-section {
     align-items: center;
     text-decoration: none;
     list-style: none;
+    width: 100%;
 }
 p {
     text-decoration: none;
@@ -201,16 +189,14 @@ article.articleIndex {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     margin: 30px;
     padding: 150px;
-    background-color: #f9f9f9;
-    padding: 17px;
+    background-color: #F9F9F9;
+    padding: 10px;
     border-radius: 15px;
+    width: 22%;
 }
-
-
-
 h1 {
     padding: 15px;
     text-align: center;
@@ -218,7 +204,7 @@ h1 {
     font-size: 40px;
     display: flex
 ;
-    color: #ffeecc;
+    color: #FFEECC;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
@@ -230,8 +216,6 @@ section.sectioncargarmas {
     display: flex;
     justify-content: center;
 }
-
-
 p {
     text-decoration: none;
     padding: 3px;
@@ -243,19 +227,17 @@ button.cargar-mas {
     text-decoration-color: white;
     border-block-color: transparent;
     border-block-end-style: transparent; }
-
 article.BEM {
         display: flex;
         justify-content: center;
         font-size: 15px;
-        margin: 0px 475px;
+        margin: 10px 475px
         align-content: center;
         align-items: center;
     }
-    
     img.imgPlato {
         display: flex;
-        width: 100%;
+        width: 88%;
         border-radius: 15px;
         justify-content: center;
     }
@@ -280,7 +262,6 @@ article.BEM {
     justify-content: center;
     align-items: center;
     background-color: grey;
-
 }
 .loginForm {
         background-color: #44444429;
@@ -291,13 +272,11 @@ article.BEM {
         flex-direction: column;
         padding: 60px;
     }
-    
     label {
         font-size: small;
         margin-bottom: 3px;
         font-weight: 300;
     }
-    
     input#nameemail {
         align-self: flex-start;
         align-content: flex-start;
@@ -305,27 +284,18 @@ article.BEM {
         height: 20px;
         font-size: x-small;
     }
-    
     .derivar {
         flex-direction: row;
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    
-    span#errorcontra {
-        font-size: x-small;
-        font-weight: 150;
-        color: red;
-        padding: 5px;
-    }
-    
+   
     .Form {
         margin: 20px 50px 5px 50px;
         padding: 10px;
         align-items: center;
     }
-    
     .no_cuenta {
         font-size: x-small;
         display: flex;
@@ -337,10 +307,8 @@ article.BEM {
     }
     input#password {  margin: 5px 4px;
     }
-    
-    
     button.derivar {
-        background-color: #5757b2;
+        background-color: #5757B2;
         color: white;
         border: 0px;
         padding: 12px;
@@ -349,7 +317,6 @@ article.BEM {
         margin: 15px 0px 40px 0px;
         font-size: small;
     }
-    
     section.btninicio {
         flex-direction: row;
         display: flex;
