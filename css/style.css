@@ -46,13 +46,15 @@ ol, ul {
     flex-direction: row;
     flex-wrap: wrap;
 }
-form.FormBuscar {
+form.FormBuscar { 
     width: 95%;
     padding-top: 25px;
+    display: flex;
+    justify-content: center;
 }
 input.buscador {
     padding: 5px;
-    width: 435px;
+    width: 680px;
     margin: -1px;
 }
 .formBuscar input{
