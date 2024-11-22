@@ -1,6 +1,6 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
-let idReceta = qsObj.get("idReceta");
+let idReceta = qsObj.get("idCategoria");
 
 /* recuperar elementos del DOM */
 let nameReceta = document.querySelector(".nameReceta");
