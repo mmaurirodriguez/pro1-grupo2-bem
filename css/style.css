@@ -231,7 +231,7 @@ article.BEM {
         display: flex;
         justify-content: center;
         font-size: 15px;
-        margin: 10px 475px
+        margin: 10px 475px; 
         align-content: center;
         align-items: center;
     }
