@@ -341,6 +341,46 @@ section.EPform {
         font-family: ui-rounded;
         border-radius: 4px;
 }
+
+
+ol, ul {
+    list-style-type: none;
+    
+}
+section.recetasSec {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+li.listadoCategories {
+    list-style-type: none;
+    margin: 20px;
+    width: 8%;
+    display: flex
+;
+    align-items: center;
+}
+section.recetasSec {
+    display: flex
+;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+}
+a.aReceta {
+    list-style: none;
+    text-decoration-style: none;
+    background-color: white;
+    padding: 10px;
+    font-family: ui-monospace;
+    border-radius: 5px;
+    color: #83481d;
+    font-size: larger;
+    font-weight: 800;
+    width: 91%;
+    align-self: center;
+}
 label.checkbox {
     font-size: small;
     padding: 8px;
