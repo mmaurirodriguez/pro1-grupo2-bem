@@ -16,7 +16,7 @@ function cargarMasrecetas(url) {
         let dato = results.recipes;
         let contenido = "";
         for (let i = 0; i < dato.length; i++) {
-            contenido += `<article>
+            contenido += `<article class="articleIndex">
                                 <img class="imgPlato" src="${dato[i].image}" alt="">
                                 <p class="nombrePlato">Nombre de la receta: ${dato[i].name}</p>
                                 <p class="dificultadPlato">Nivel de dificultad: ${dato[i].difficulty}</p>
