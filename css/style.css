@@ -5,7 +5,7 @@
 }
 body{
 background-image: url(../img/R.jpg);
-font-family: 'Arial',sans-serif;
+font-family: 'Open Sans', sans-serif;
 background-size: cover;
 background-position: center;
 color: #333;
@@ -40,7 +40,10 @@ color: #333;
         margin-left: 20px;
     }
 a {color: black;
-    text-decoration: none;}
+    text-decoration: none;
+    font-family: 'Helvetica', sans-serif;
+    font-weight:bold;
+}
 ol, ul {
     list-style-type: none;
     flex-direction: row;
@@ -122,9 +125,6 @@ input.buscador {
     .contenedorC {
         width: 51%;
     }
-    .contenedorD {
-        width: 20%;
-    }
     .items1 {
         width: 100%;
         display: flex
@@ -161,12 +161,7 @@ p {
     text-decoration: none;
     padding: 10px;
 }
-button.cargar-mas {
-    padding: 12px;
-    background-color: #6277b352;
-    text-decoration-color: white;
-    border-block-end-style: transparent;
-}
+
 section.nombres {
     display: flex;
     flex-direction: row;
@@ -200,20 +195,20 @@ article.articleIndex {
     padding: 10px;
     border-radius: 15px;
     width: 22%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 h1 {
     padding: 15px;
     text-align: center;
     text-size-adjust: auto;
-    font-size: 40px;
-    display: flex
-;
+    
+    display: flex;
+    font-family: 'Poppins', sans-serif;
     color: #FFEECC;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     background-color: #ef6969cc;
-    font-family: ui-monospace;
     align-content: center;
 }
 section.sectioncargarmas {
@@ -226,11 +221,25 @@ p {
     font-size: smaller;
 }
 button.cargar-mas {
-    padding: 12px;
-    background-color: darkgrey;
-    text-decoration-color: white;
-    border-block-color: transparent;
-    border-block-end-style: transparent; }
+    padding: 12px 20px; 
+    background-color: #ef6969cc;; 
+    color: white; 
+    border: none; 
+    border-radius: 8px; 
+    font-size: 16px;
+    font-weight: bold; 
+    text-align: center; 
+    cursor: pointer; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease; 
+}
+
+button.cargar-mas:hover {
+    background-color: #d45555cc; 
+    transform: scale(1.05); 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
+}
+
 article.BEM {
         display: flex;
         justify-content: center;
@@ -313,31 +322,59 @@ section.EPform {
         width: 156%;
     }
     button.derivar {
-        background-color: #5757B2;
-        color: white;
-        border: 0px;
-        padding: 12px;
-        border-radius: 5px;
-        align-self: center;
-        font-size: small;
+        background-color: #0a383b; 
+        color: white; 
+        border: none; 
+        padding: 12px 20px; 
+        border-radius: 8px; 
+        align-self: center; 
+        font-size: 16px; 
+        font-weight: bold; 
+        text-align: center; 
+        cursor: pointer; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     }
+    
+    /* Efecto al pasar el cursor (hover) */
+    button.derivar:hover {
+        background-color: #096066; /* Cambia a un tono más oscuro de azul */
+        transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para un efecto de profundidad */
+    }
+    
     section.btninicio {
         flex-direction: column;
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    a.anocuenta {
-        font-weight: bolder;
-        font-size: small;
-    }
+/* Estilo para el párrafo con la clase .anocuentaP */
+.anocuentaP {
+    font-size: small;  /* Igual al tamaño de la fuente de .anocuenta */
+    font-weight: bolder;  /* Hace el texto más grueso */
+    color: #000000; /* Puedes mantener el color o cambiarlo */
+}
+
+/* Estilos para el enlace con clase .anocuenta */
+a.anocuenta {
+    font-weight: bolder;
+    font-size: small; 
+    text-decoration: none;
+    color: #043d2f;
+    transition: all 0.3s ease;
+}
+
+a.anocuenta:hover {
+    text-decoration: underline;
+    color: #245e5e;
+}
+
     p.detallePlato {
         font-weight: bolder;
-        font-size: small;
+        font-size: 20px;
     }
-    h1.loginh1  {
-        background-color: #0a383b;
-        font-family: ui-rounded;
+    .loginRegisterh1  {
+        background-color: #83481d ;
         border-radius: 4px;
     }
 .tituloRegister {
@@ -372,19 +409,6 @@ section.recetasSec {
     justify-content: center;
     align-content: stretch;
 }
-a.aReceta {
-    list-style: none;
-    text-decoration-style: none;
-    background-color: white;
-    padding: 10px;
-    font-family: ui-monospace;
-    border-radius: 5px;
-    color: #83481d;
-    font-size: larger;
-    font-weight: 800;
-    width: 91%;
-    align-self: center;
-}
 label.checkbox {
     font-size: small;
     padding: 8px;
@@ -393,4 +417,45 @@ label.checkbox {
 /*BOTON EN CATEGORIES*/
 .contenedorCargarMas{
     text-align: center;
+}
+/*cambios mariana*/
+.dificultadPlato{
+    font-size: 1.2rem;
+    color: #333333  ;
+}
+.nombrePlato{
+    font-weight: bold;
+    font-size: 22px;
+    padding:15px;
+    padding-bottom: 5px;
+    color: #83481d;
+}
+.detallePlatoA{
+    color: #8b6348 ; /* Naranja suave */
+text-decoration: none;
+padding: 5px 10px; /* Espacio alrededor del texto */
+border-radius: 5px; /* Bordes redondeados */
+display: inline-block; /* Para que el padding y borde funcionen bien */
+}
+.detallePlatoA:hover{
+    text-decoration: underline;
+}
+a.aReceta {
+    list-style: none;
+    text-decoration: none;  
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    font-family: ui-monospace;
+    border-radius: 5px;
+    color: #83481d;
+    font-size: larger;
+    font-weight: 800;
+    width: 91%;  
+    text-align: center;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    margin: 5px;  
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);  
+    height: 50px;  
 }
