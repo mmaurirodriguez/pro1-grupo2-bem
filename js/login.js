@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-        window.location.href = 'index.html';
+        window.location.href = '/index.html';
         return false;
     });
 });
