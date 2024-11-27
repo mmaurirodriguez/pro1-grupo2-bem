@@ -55,11 +55,7 @@ form.FormBuscar {
     display: flex;
     justify-content: center;
 }
-input.buscador {
-    padding: 5px;
-    width: 680px;
-    margin: -1px;
-}
+
 .formBuscar input{
         width: 90%;
         height: 40px;
@@ -67,9 +63,7 @@ input.buscador {
         border-radius: 1px solid transparent;
        padding: 5px;
     }
-    button {
-        padding: 4px;
-    }
+  
 .formBuscar button{
         width: 10%;
         height: 40px;
@@ -87,21 +81,27 @@ input.buscador {
         display: flex;
         justify-content: center;
     }
-    input.buscador {
-        padding: 5px;
-        width: 680px;
-        margin: -1px;
-    }
+  
     main {
         padding-top: 20px;
     }
-    button {
-        padding: 4px;
+    .BUSCADOR {
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        margin: 3px;
+        background-color: #0a383b;
+        color: white;
+        font-family: ui-monospace;
+        font-size: 13px;
     }
     input.buscador {
         padding: 5px;
-        width: 435px;
+        width: 408px;
         margin: -1px;
+        height: 33px;
+        display: flex;
+        align-items: center;
     }
     .contenedor {
         height: 80px;
@@ -347,6 +347,7 @@ section.EPform {
         justify-content: center;
         gap: 10px;
     }
+    
 /* Estilo para el párrafo con la clase .anocuentaP */
 .anocuentaP {
     font-size: small;  /* Igual al tamaño de la fuente de .anocuenta */
@@ -422,10 +423,10 @@ label.checkbox {
     font-size: 1.2rem;
     color: #333333  ;
 }
-.nombrePlato{
+.nombrePlato {
     font-weight: bold;
-    font-size: 22px;
-    padding:15px;
+    font-size: 18px;
+    padding: 15px;
     padding-bottom: 5px;
     color: #83481d;
 }
@@ -436,6 +437,7 @@ padding: 5px 10px; /* Espacio alrededor del texto */
 border-radius: 5px; /* Bordes redondeados */
 display: inline-block; /* Para que el padding y borde funcionen bien */
 }
+
 .detallePlatoA:hover{
     text-decoration: underline;
 }
