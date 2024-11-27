@@ -253,15 +253,15 @@ article.BEM {
         border-radius: 15px;
         justify-content: center;
     }
-.FormReg{
-    background-color: #44444429;
+    .FormReg {
+        background-color: #44444429;
         display: flex;
         border-radius: 10px;
-        width: 550px;
+        width: 500px;
         margin: auto;
         flex-direction: column;
-        padding: 60px;
-}
+        padding: 50px;
+    }
 
 section.EPform {
     display: flex;
@@ -420,22 +420,22 @@ label.checkbox {
 }
 /*cambios mariana*/
 .dificultadPlato{
-    font-size: 1.2rem;
     color: #333333  ;
 }
 .nombrePlato {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     padding: 15px;
     padding-bottom: 5px;
     color: #83481d;
 }
-.detallePlatoA{
-    color: #8b6348 ; /* Naranja suave */
-text-decoration: none;
-padding: 5px 10px; /* Espacio alrededor del texto */
-border-radius: 5px; /* Bordes redondeados */
-display: inline-block; /* Para que el padding y borde funcionen bien */
+.detallePlatoA {
+    color: #8b6348;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 16px;
 }
 
 .detallePlatoA:hover{
