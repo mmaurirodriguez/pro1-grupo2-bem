@@ -12,7 +12,7 @@ formularioRegistro.addEventListener('submit', function (event) {
     emailError.textContent = '';
     passwordError.textContent = '';
 
-    let valid = true; // validar
+    let valid = true; 
 
     // validar email
     if (!email) {
@@ -43,7 +43,7 @@ formularioBusqueda.addEventListener("submit", function(e) {
     } else if (valorNombre.length < 3) {
         alert("El nombre debe tener al menos 3 caracteres");
     } else {
-        // Si la validación pasa, enviar el formulario de búsqueda
+        // si la validación pasaa, enviar el formulario de búsqueda
         console.log("Formulario de búsqueda válido. Enviando formulario.");
         formularioBusqueda.submit();
     }

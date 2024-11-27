@@ -16,7 +16,7 @@ function cargarMasrecetas(url) {
         console.log(results);
         let dato = results;
         let contenido = "";
-        let tagsParaMostrar = dato.slice(skip, skip + 10);
+        let tagsParaMostrar = dato.slice(skip, skip + 18);
 
         for (let i = 0; i < tagsParaMostrar.length; i++) {
             contenido += `<li class=listadoCategories><a class="aReceta" href="./category.html?idReceta=${tagsParaMostrar[i]}">${tagsParaMostrar[i]}</a></li>`;

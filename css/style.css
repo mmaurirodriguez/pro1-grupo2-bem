@@ -609,3 +609,30 @@ p.categoriaReceta {
         padding: 50px;
     }
 }
+.NOMBRES {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    font-size: 15px;
+    margin: 10px auto; /* Márgenes automáticos para centrar el bloque */
+    width: 25%; /* Mantener el ancho como porcentaje */
+}
+
+    .areceta {
+            color: black;
+            text-decoration: none;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: 550;
+            font-size: 15px;
+    
+    }
+    img.imgReceta {
+        width: 50%;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    .divRecetaImg {
+        background-color: #ffffff75;
+        display: flex;
+        justify-content: center;
+    }

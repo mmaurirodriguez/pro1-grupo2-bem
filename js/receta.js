@@ -1,10 +1,12 @@
 let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idReceta = qsObj.get("idReceta");
+let buscador = document.querySelector(".buscador");
+let formulario = document.querySelector("form");
 
 let nameReceta = document.querySelector(".nameReceta");
 let instReceta = document.querySelector(".instReceta");
-let imgPlato = document.querySelector(".imgPlato");
+let imgReceta = document.querySelector(".imgReceta");
 let tiempCoccReceta = document.querySelector(".tiempCoccReceta");
 let categoriaReceta = document.querySelector(".categoriaReceta");
 
@@ -18,7 +20,7 @@ fetch(url)
     console.log(results);
     nameReceta.innerText = `${results.name}`
     instReceta.innerText = `Instrucciones de preparación: ${results.instructions}`
-    imgPlato.src= results.image;
+    imgReceta.src= results.image;
     tiempCoccReceta.innerText = `Tiempo de cocción: ${results.cookTimeMinutes}`
 
     let tagsHTML = ""; 
@@ -39,4 +41,15 @@ fetch(url)
 .catch(function(err) {
     return console.log(err);
 }); 
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let valorNombre = buscador.value;
+    if (!valorNombre) {
+        alert("Completa el campo vacío");
+    } else if (valorNombre.length < 3) {
+        alert("El nombre debe tener al menos 3 caracteres");
+    } else {
+        formulario.submit();
+    }
+});
 

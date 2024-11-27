@@ -1,13 +1,13 @@
 let buscador = document.querySelector(".buscador");
 let formulario = document.querySelector("form");
 let listaRecetas = document.querySelector(".recetas-section");
-let cargarMasBtn = document.querySelector(".cargar-mas")
+let cargarMasBtn = document.querySelector(".cargar-mas");
 let skip = 0;
 
 //APIS E INFO//
 const URL =  "https://dummyjson.com/recipes?limit=10&skip="+ skip;
-function cargarMasrecetas(url) {
-    fetch(url)
+function cargarMasrecetas(URL) {
+    fetch(URL)
     .then(function(data) {
         return data.json();
     })
@@ -42,7 +42,6 @@ cargarMasBtn.addEventListener("click", function() {
 formulario.addEventListener("submit", function(e) {
     e.preventDefault();
     let valorNombre = buscador.value;
-
     if (!valorNombre) {
         alert("Completa el campo vacío");
     } else if (valorNombre.length < 3) {
@@ -51,4 +50,3 @@ formulario.addEventListener("submit", function(e) {
         formulario.submit();
     }
 });
-
