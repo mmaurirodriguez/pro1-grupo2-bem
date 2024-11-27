@@ -584,36 +584,11 @@ p.categoriaReceta {
         flex-direction: column;
         padding: 60px;
     }
-    label {
-        font-size: medium;
-        margin-bottom: 3px;
-        font-weight: 300;
-    }
-    input#nameemail {
-        align-self: flex-start;
-        align-content: flex-start;
-        width: 365px;
-        height: 20px;
-        font-size: x-small;
-    }
-    .derivar {
-        flex-direction: row;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
    
     .Form {
         margin: 20px 50px 5px 50px;
         padding: 10px;
         align-items: center;
-    }
-    .no_cuenta {
-        font-size: x-small;
-        display: flex ;
-        justify-content: center;
-        align-items: center;
-        margin: 14px;
     }
     input#email {
         margin: 5px 0px;
@@ -623,34 +598,6 @@ p.categoriaReceta {
         margin: 5px 0px;
         width: 240%;
     }
-    button.derivar {
-        background-color: #0a383b; 
-        color: white; 
-        border: none; 
-        padding: 12px 20px; 
-        border-radius: 8px; 
-        align-self: center; 
-        font-size: 16px; 
-        font-weight: bold; 
-        text-align: center; 
-        cursor: pointer; 
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    }
-    
-    /* Efecto al pasar el cursor (hover) */
-    button.derivar:hover {
-        background-color: #096066; /* Cambia a un tono más oscuro de azul */
-        transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para un efecto de profundidad */
-    }
-    
-    section.btninicio {
-        flex-direction: column;
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
     /*Registro*/
     .FormReg {
         background-color: #44444429;
