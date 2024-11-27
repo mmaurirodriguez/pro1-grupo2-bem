@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const formulario = document.querySelector('.loginForm'); 
-    const emailInput = document.querySelector('#email'); 
-    const passwordInput = document.querySelector('#password'); 
+    let formularioLogin = document.querySelector('.loginForm'); 
+    let emailInput = document.querySelector('#email'); 
+    let passwordInput = document.querySelector('#password'); 
+
 
     emailInput.addEventListener('focus', function () {
         console.log('Foco en el campo email');
@@ -35,11 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    formulario.addEventListener('submit', function (event) {
-        event.preventDefault(); 
+    formularioLogin.addEventListener('submit', function (event) {
 
-        const email = emailInput.value;
-        const password = passwordInput.value;
+        let email = emailInput.value;
+        let password = passwordInput.value;
 
         if (email === '') {
             alert('Por favor complete el campo email');
@@ -57,5 +57,23 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         window.location.href = 'index.html';
+        return false;
     });
 });
+
+//BUSCADOR FORMULARIO//
+let buscador = document.querySelector(".buscador");
+let formulario = document.querySelector("form");
+formulario.addEventListener("submit", function(e) {
+    e.preventDefault();
+    let valorNombre = buscador.value;
+
+    if (!valorNombre) {
+        alert("Completa el campo vacío");
+    } else if (valorNombre.length < 3) {
+        alert("El nombre debe tener al menos 3 caracteres");
+    } else {
+        formulario.submit();
+    }
+});
+

@@ -2,10 +2,9 @@ let qs = location.search;
 let qsObj = new URLSearchParams(qs);
 let idReceta = qsObj.get("idReceta");
 
-/* recuperar elementos del DOM */
 let nameReceta = document.querySelector(".nameReceta");
 let instReceta = document.querySelector(".instReceta");
-let img = document.querySelector(".img");
+let imgPlato = document.querySelector(".imgPlato");
 let tiempCoccReceta = document.querySelector(".tiempCoccReceta");
 let categoriaReceta = document.querySelector(".categoriaReceta");
 
@@ -17,13 +16,27 @@ fetch(url)
 })
 .then(function(results) {
     console.log(results);
-    nameReceta.innerText = `Receta: ${results.name}`
+    nameReceta.innerText = `${results.name}`
     instReceta.innerText = `Instrucciones de preparación: ${results.instructions}`
-    img.src= results.image;
+    imgPlato.src= results.image;
     tiempCoccReceta.innerText = `Tiempo de cocción: ${results.cookTimeMinutes}`
-    categoriaReceta.innerHTML = `Categorias: <a href="./categories.html">${results.tags}</a>`
 
+    let tagsHTML = ""; 
+    let tags = results.tags; 
+    
+    for (let i = 0; i < tags.length; i++) {
+        tagsHTML += 
+        `<a href="./category.html?idReceta=${tags[i]}" class="categoria-link">${tags[i]}</a>`;
+        
+        if (i < tags.length - 1) {
+            tagsHTML += ", ";
+        }
+    }
+
+    // Asignar los enlaces generados al elemento categoriaReceta
+    categoriaReceta.innerHTML = `Categorías: ${tagsHTML}`;
 })
 .catch(function(err) {
     return console.log(err);
-});
+}); 
+

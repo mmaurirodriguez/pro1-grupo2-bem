@@ -12,8 +12,8 @@
                 <img class="img-logo" src="./img/image_converted_v2.png" alt="logo">
             </article>
             <article class="contenedorC">
-                <form class="FormBuscar"  action="/index.html" method="get">
-                    <input class="buscador" name="" placeholder="Buscar recetas" type="text">
+                <form class="FormBuscar"  action="search-results.html" method="get">
+                    <input class="buscador" name="buscador" placeholder="Buscar recetas" type="text">
                     <button type="submit">Buscar</button>
                 </form>
             </article> 
@@ -30,17 +30,8 @@
             </section>
         </header>
         <main>
-            <section>
-                <h2>Resultados de busqueda para: <span id="terminoBusqueda"></span></h2>
-
-                <div id="noResultados" class="no-resultados">
-                    <p>No se encontraron coincidencias para tu busqueda</p>
-                </div>
-
-                <div id="resultadosContainer" class="resultados-container">
-                    <!--Resultados con java-->
-                </div>
-            </section>
+            <p class="resultadosMensaje"></p>
+            <div class="resultadosBusqueda"></div>
         </main>
     
     <footer>

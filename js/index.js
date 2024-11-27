@@ -44,7 +44,7 @@ formulario.addEventListener("submit", function(e) {
     let valorNombre = buscador.value;
 
     if (!valorNombre) {
-        alert("Debes completar el campo nombre");
+        alert("Completa el campo vacío");
     } else if (valorNombre.length < 3) {
         alert("El nombre debe tener al menos 3 caracteres");
     } else {
