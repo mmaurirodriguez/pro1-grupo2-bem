@@ -422,13 +422,7 @@ label.checkbox {
 .dificultadPlato{
     color: #333333  ;
 }
-.nombrePlato {
-    font-weight: bold;
-    font-size: 16px;
-    padding: 15px;
-    padding-bottom: 5px;
-    color: #83481d;
-}
+
 .detallePlatoA {
     color: #8b6348;
     text-decoration: none;
@@ -437,9 +431,18 @@ label.checkbox {
     display: inline-block;
     font-size: 16px;
 }
-
+.nombrePlato {
+    font-weight: bold;
+    font-size: 13px;
+    padding: 10px;
+    padding-bottom: 5px;
+    color: #83481d;
+}
 .detallePlatoA:hover{
     text-decoration: underline;
+}
+a.detalleReceta {
+    font-size: small;
 }
 a.aReceta {
     list-style: none;
@@ -481,4 +484,38 @@ a.aReceta {
     text-decoration: none;
     list-style: none;
     width: 100%;
+}
+p.nameReceta {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    font-family: ui-monospace;
+    font-size: 20px;
+    background-color: #ffffff75;
+    color: #ef6969cc;
+    font-weight: bold;
+}
+p.instReceta {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family: ui-monospace;
+    background-color: #ffffff75;
+}
+p.tiempCoccReceta {
+    display: flex;
+    justify-content: flex-start;
+    padding: 16px;
+    font-size: 15px;
+    font-family: ui-monospace;
+    background-color: #ffffff75;
+}
+p.categoriaReceta {
+    background-color: #ffffff75;
+    padding: 17px;
+    font-family: ui-monospace;
 }
