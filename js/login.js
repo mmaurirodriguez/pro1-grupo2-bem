@@ -37,6 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     formularioLogin.addEventListener('submit', function (event) {
+        event.preventDefault();
 
         let email = emailInput.value;
         let password = passwordInput.value;
