@@ -334,11 +334,10 @@ section.EPform {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     }
     
-    /* Efecto al pasar el cursor (hover) */
     button.derivar:hover {
-        background-color: #096066; /* Cambia a un tono más oscuro de azul */
-        transform: scale(1.05); /* Aumenta ligeramente el tamaño del botón */
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para un efecto de profundidad */
+        background-color: #096066; 
+        transform: scale(1.05); 
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); 
     }
     
     section.btninicio {
@@ -348,14 +347,12 @@ section.EPform {
         gap: 10px;
     }
     
-/* Estilo para el párrafo con la clase .anocuentaP */
 .anocuentaP {
-    font-size: small;  /* Igual al tamaño de la fuente de .anocuenta */
-    font-weight: bolder;  /* Hace el texto más grueso */
-    color: #000000; /* Puedes mantener el color o cambiarlo */
+    font-size: small;  
+    font-weight: bolder;  
+    color: #000000; 
 }
 
-/* Estilos para el enlace con clase .anocuenta */
 a.anocuenta {
     font-weight: bolder;
     font-size: small; 
@@ -374,7 +371,7 @@ a.anocuenta:hover {
         font-size: 20px;
     }
     .loginRegisterh1  {
-        background-color: #83481d ;
+        background-color: #0a383b ;
         border-radius: 4px;
     }
 .tituloRegister {
@@ -556,13 +553,15 @@ p.categoriaReceta {
         margin: 0;
     }
     .items1 {
-        width: 100%;
-        display: flex
-    ;
-        justify-content: space-evenly;
-        padding: 15px 0px;
-        margin: 0px 18px 0px 0px;
-    }
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 15px 0px;
+            margin: 0px 218px 0px 0px;
+            background-color: #245e5ede;
+            border-radius: 6px;
+        }
+        
 
     /*categories*/
     li.listadoCategories {
@@ -611,11 +610,11 @@ p.categoriaReceta {
 }
 .NOMBRES {
     display: flex;
-    justify-content: center; /* Centrado horizontal */
-    align-items: center; /* Centrado vertical */
+    justify-content: center; 
+    align-items: center;
     font-size: 15px;
-    margin: 10px auto; /* Márgenes automáticos para centrar el bloque */
-    width: 25%; /* Mantener el ancho como porcentaje */
+    margin: 10px auto; 
+    width: 25%; 
 }
 
     .areceta {
@@ -636,3 +635,108 @@ p.categoriaReceta {
         display: flex;
         justify-content: center;
     }
+    @media (max-width: 920px){
+
+
+        /*fotos de index*/
+        article.articleIndex {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin: 30px;
+            padding: 150px;
+            background-color: #F9F9F9;
+            padding: 10px;
+            border-radius: 15px;
+            width: 50%;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    
+    
+        /*header*/
+        .contenedor {
+            height: 80px;
+            display: inline;
+            justify-content: center;
+            align-items: center;
+           /* margin: 30px;*/
+        }
+        .contenedorIz, .contenedorC, .contenedorD {
+            height: 100px;
+            display: flex;
+            width: 100%;
+        ;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center;
+            margin: 0;
+        }
+        .items1 {
+            width: 100%;
+            display: flex
+        ;
+            justify-content: space-evenly;
+            padding: 15px 0px;
+            margin: 0px 18px 0px 0px;
+        }
+    
+    
+        /*categories*/
+        li.listadoCategories {
+            list-style-type: none;
+            margin: 20px;
+            width: 50%;
+            display: flex
+        ;
+            align-items: center;
+        }
+    
+    
+         /*Login*/
+         @media (max-width: 640px) {
+            .Form {
+                margin-bottom: 20px;
+            }
+        
+            /* Estilo específico para el input de email */
+            #email {
+                padding: 12px; /* Aumenta el padding para mayor comodidad */
+                font-size: 16px; /* Aumenta el tamaño de la fuente */
+                width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
+                box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+            }
+        
+            /* Estilo para el input de password */
+            #password {
+                padding: 12px;
+                font-size: 16px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        
+            .loginForm {
+                padding: 15px; /* Añadir algo de espacio alrededor del formulario */
+                width: 90%; /* Limitar el ancho del formulario */
+                margin: auto; /* Centrar el formulario */
+            }
+        
+            .btninicio button {
+                width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
+                padding: 12px; /* Aumentar el padding del botón */
+            }
+        /*Registro*/
+        .FormReg {
+            background-color: #44444429;
+            display: flex;
+            border-radius: 10px;
+            width: 85%;
+            margin: auto;
+            flex-direction: column;
+            padding: 50px;
+        }
+    
+    
+    }
+}
