@@ -593,17 +593,25 @@ span.span{
     }
    
     .Form {
-        margin: 20px 50px 5px 50px;
+        margin: 0px;
         padding: 10px;
         align-items: center;
+        width: 100%;
     }
     input#email {
         margin: 5px 0px;
-        width: 240%;
+        width: 100%;
     }
     input#password {
         margin: 5px 0px;
-        width: 240%;
+        width: 100%;
+    }
+    section.EPform {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
     }
     /*Registro*/
     .FormReg {
