@@ -609,11 +609,11 @@ p.categoriaReceta {
     }
     input#email {
         margin: 5px 0px;
-        width: 150%;
+        width: 250%;
     }
     input#password {
         margin: 5px 0px;
-        width: 150%;
+        width:250%;
     }
 }
 .NOMBRES {
