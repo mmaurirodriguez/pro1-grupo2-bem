@@ -591,7 +591,7 @@ p.categoriaReceta {
     }
     input#email {
         margin: 5px 0px;
-        width: 380%;
+        width: 240%;
     }
     input#password {
         margin: 5px 0px;
@@ -606,6 +606,14 @@ p.categoriaReceta {
         margin: auto;
         flex-direction: column;
         padding: 50px;
+    }
+    input#email {
+        margin: 5px 0px;
+        width: 150%;
+    }
+    input#password {
+        margin: 5px 0px;
+        width: 150%;
     }
 }
 .NOMBRES {
@@ -679,7 +687,8 @@ p.categoriaReceta {
         ;
             justify-content: space-evenly;
             padding: 15px 0px;
-            margin: 0px 18px 0px 0px;
+            margin: 0px 70px 0px 0px;
+            background-color: #9ea3a3;
         }
     
     
