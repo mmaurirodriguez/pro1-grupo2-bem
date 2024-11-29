@@ -411,11 +411,11 @@ label.checkbox {
     padding: 8px;
     margin: 4px;
 }
-/*BOTON EN CATEGORIES*/
+
 .contenedorCargarMas{
     text-align: center;
 }
-/*cambios mariana*/
+
 .dificultadPlato{
     color: #333333  ;
 }
@@ -547,7 +547,7 @@ span.span{
         display: inline;
         justify-content: center;
         align-items: center;
-       /* margin: 30px;*/
+       
     }
     .contenedorIz, .contenedorC, .contenedorD {
         height: 100px;
@@ -684,7 +684,7 @@ span.span{
             display: inline;
             justify-content: center;
             align-items: center;
-           /* margin: 30px;*/
+           
         }
         .contenedorIz, .contenedorC, .contenedorD {
             height: 100px;
@@ -725,15 +725,15 @@ span.span{
                 margin-bottom: 20px;
             }
         
-            /* Estilo específico para el input de email */
+            
             #email {
-                padding: 12px; /* Aumenta el padding para mayor comodidad */
-                font-size: 16px; /* Aumenta el tamaño de la fuente */
-                width: 100%; /* Asegura que el campo ocupe todo el ancho disponible */
-                box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+                padding: 12px; 
+                font-size: 16px; 
+                width: 100%; 
+                box-sizing: border-box; 
             }
         
-            /* Estilo para el input de password */
+            
             #password {
                 padding: 12px;
                 font-size: 16px;
@@ -742,14 +742,14 @@ span.span{
             }
         
             .loginForm {
-                padding: 15px; /* Añadir algo de espacio alrededor del formulario */
-                width: 90%; /* Limitar el ancho del formulario */
-                margin: auto; /* Centrar el formulario */
+                padding: 15px; 
+                width: 90%; 
+                margin: auto; 
             }
         
             .btninicio button {
-                width: 100%; /* Asegura que el botón ocupe todo el ancho disponible */
-                padding: 12px; /* Aumentar el padding del botón */
+                width: 100%; 
+                padding: 12px; 
             }
         /*Registro*/
         .FormReg {

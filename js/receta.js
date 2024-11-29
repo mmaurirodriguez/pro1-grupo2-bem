@@ -35,7 +35,7 @@ fetch(url)
         }
     }
 
-    // Asignar los enlaces generados al elemento categoriaReceta
+    
     categoriaReceta.innerHTML = `Categorías: ${tagsHTML}`;
 })
 .catch(function(err) {
