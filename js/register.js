@@ -1,37 +1,48 @@
-let buscador = document.querySelector(".buscador");  
-let formularioBusqueda = document.querySelector(".FormBuscar");  
-let formularioRegistro = document.querySelector(".FormReg");  
-
+let formularioRegistro = document.querySelector(".FormReg");
 
 formularioRegistro.addEventListener('submit', function (event) {
-    const password = document.getElementById('password').value;
     const email = document.getElementById('email').value;
-    const passwordError = document.getElementById('passwordError');
-    const emailError = document.getElementById('emailError');
+    const password = document.getElementById('password').value;
+    const terminos = document.getElementById('terminos');
 
-    emailError.textContent = '';
-    passwordError.textContent = '';
+    // Seleccionar mensajes de error
+    const emailError = document.querySelector("#email + .span");
+    const passwordError = document.querySelector("#password + .span");
+    const terminosError = document.querySelector("#terminos + label + .span");
 
-    let valid = true; 
+    // Ocultar errores al iniciar
+    emailError.style.display = "none";
+    passwordError.style.display = "none";
+    terminosError.style.display = "none";
 
-    // validar email
+    let valid = true;
+
+    // Validar email
     if (!email) {
-        emailError.textContent = 'Complete el campo por favor';
+        emailError.style.display = "block";
         valid = false;
     }
 
-    // validarr contraseña
+    // Validar contraseña
     if (!password) {
-        passwordError.textContent = 'Complete el campo por favor';
+        passwordError.style.display = "block";
         valid = false;
     }
 
-    // si la validación falla --> evitar el envío
+    // Validar checkbox
+    if (!terminos.checked) {
+        terminosError.style.display = "block";
+        valid = false;
+    }
+
+    // Si alguna validación falla, evitar el envío
     if (!valid) {
-        console.log("Formulario de registro no válido. Evitar envío.");
-        event.preventDefault();  
+        event.preventDefault();
+        console.log("Formulario no válido. Corregir errores.");
     }
 });
+
+
 
 // formulario de búsqueda
 formularioBusqueda.addEventListener("submit", function(e) {

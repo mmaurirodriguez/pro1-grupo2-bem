@@ -516,6 +516,14 @@ p.categoriaReceta {
     padding: 17px;
     font-family: ui-monospace;
 }
+.resultadosBusqueda{
+    display: flex;
+}
+span.span{
+    display: none;
+    font-size: smaller;
+    font-weight: bold;
+}
 
 @media (max-width: 640px){
     /*fotos de index*/
