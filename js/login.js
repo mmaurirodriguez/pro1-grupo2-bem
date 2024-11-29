@@ -56,9 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('La contraseña debe tener al menos 5 caracteres');
             return;
         }
-
-        window.location.href = '/index.html';
-        return false;
+        formularioLogin.submit();
+        
     });
 });
 
